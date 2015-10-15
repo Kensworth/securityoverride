@@ -2,6 +2,7 @@
 Attemping to crack the last challenge on securityoverride.org, where the goal is to execute phpinfo() on the page
 
 Thought process so far:
+
 The website utilizes a get requested field "highlight" which takes that as an input into PHP's preg_replace's pattern match.
 Therefore, www.examplesite/regex.php?highlight=blahblahblah will send $_GET['highlight'], the string "blahblahblah" into a backend script (to the best of my poking around in the dark):
 $string = "exampletext";
