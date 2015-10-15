@@ -4,7 +4,7 @@ Attemping to crack the last challenge on securityoverride.org, where the goal is
 Thought process so far:
 
 The website utilizes a get requested field "highlight" which takes that as an input into PHP's preg_replace's pattern match.
-Therefore, www.examplesite/regex.php?highlight=blahblahblah will send $_GET['highlight'], the string "blahblahblah" into a backend script (to the best of my poking around in the dark):
+Therefore, www.examplesite/regex.php?highlight=blahblahblah will send $_GET['highlight'], the string "blahblahblah" into a backend script (to the best of my limited, yet growing knowledge gained through poking around in the black box that is the backend script):
 $string = "exampletext";
 $string = preg_replace("/" . $_GET['highlight'] . "/", '$0 * $1', "$string");
 
