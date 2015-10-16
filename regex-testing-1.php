@@ -4,11 +4,10 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 
 $string = "bluechill";
-$regex = $_GET['highlight'];
-$string = preg_replace("/". $regex . "/", $_GET['highlight'] . ' * $1', $string);
+$string = preg_replace("/". $_GET['highlight'] . "/", $_GET['highlight'] . ' * $1', $string);
 echo $string;
 echo "<br />";
-echo $regex;
+echo $_GET['highlight']
 
 //blue|%20echo%20phpinfo();/e%00
 //blue/e%00&highlight=echo phpinfo();

