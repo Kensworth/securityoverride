@@ -26,3 +26,6 @@ echo $string;
 It seems as if the second parameter in preg_replace is merely the get parameter 'highlight' with an <img> tag and the rest of the unmatched string appended to it, so am I right to assume that the goal here is to inject a string that both matches $string and executes phpinfo() while also being valid php code? 
 
 So, something along the lines of "blue|phpinfo()/e%00" is the style of injection I'm going to attempt next.
+
+Update (October 16th, 2015): Security Override site seems to be down, seems as if the admin stopped paying for hosting. Hoping this doesn't spell the end of the journey.
+
