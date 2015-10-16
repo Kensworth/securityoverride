@@ -29,3 +29,4 @@ So, something along the lines of "blue|phpinfo()/e%00" is the style of injection
 
 Update (October 16th, 2015): Security Override site seems to be down, seems as if the admin stopped paying for hosting. Hoping this doesn't spell the end of the journey.
 
+Update (October 16th, 2015, 6:00pm): Security Override is back online but down for maintenance. Current strategy involves null byte injection with a comment // at the end, but the question of how to make it valid php code that both matches the string and executes code is beyond me. Currently testing in my faux backend and certain variations of ${phpinfo()}|blue/e%00 are getting closer.
